@@ -10,8 +10,8 @@
 int main() {
 
 	struct rlimit old_lim, new_lim;
-    
-	if( getrlimit(RLIMIT_FSIZE, &old_lim) == 0) {
+
+	if (getrlimit(RLIMIT_FSIZE, &old_lim) == 0) {
               printf("RLIMIT_FSIZE old limits - soft limit= %llu \t"
 			" hard limit= %llu \n", old_lim.rlim_cur,old_lim.rlim_max);
 	}
@@ -19,10 +19,10 @@ int main() {
 	new_lim.rlim_cur = 16;
 	new_lim.rlim_max = 2048;
 
-	if(setrlimit(RLIMIT_FSIZE, &new_lim) == -1)
+	if (setrlimit(RLIMIT_FSIZE, &new_lim) == -1)
 	    fprintf(stderr, "%s\n", strerror(errno));
 
-	if( getrlimit(RLIMIT_FSIZE, &new_lim) == 0) {
+	if (getrlimit(RLIMIT_FSIZE, &new_lim) == 0) {
       	printf("RLIMIT_FSIZE new limits - soft limit= %llu "
 	 	"\t hard limit= %llu \n", new_lim.rlim_cur,new_lim.rlim_max);
 	}
