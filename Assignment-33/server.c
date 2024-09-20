@@ -2,7 +2,7 @@
 Name : server.c
 Author : Juhi Rajani
 Description :  33. Write a program to communicate between two machines using socket.
-Date: 18th Sept, 2024.
+Date: 20th Sept, 2024.
 ============================================================================
 
 #include <stdio.h>
