@@ -1,3 +1,13 @@
+============================================================================
+Name : 31.c
+Author : Juhi Rajani
+Description :  31. Write a program to create a semaphore and initialize 
+                value to the semaphore.
+                a. create a binary semaphore
+                b. create a counting semaphore
+Date: 20th Sept, 2024.
+============================================================================
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <semaphore.h>
