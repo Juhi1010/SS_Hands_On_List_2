@@ -1,3 +1,10 @@
+============================================================================
+Name : 29.c
+Author : Juhi Rajani
+Description :  29. Write a program to remove the message queue.
+Date: 18th Sept, 2024.
+============================================================================
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
